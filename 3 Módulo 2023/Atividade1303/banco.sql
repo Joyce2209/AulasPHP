@@ -1,0 +1,14 @@
+CREATE DATABASE Formulario;
+USE Formulario;
+
+CREATE TABLE Cliente(
+	CodCliente INT NOT NULL AUTO_INCREMENT,
+	NomeCliente VARCHAR(100) NOT NULL,
+	SobrenomeCliente VARCHAR(100) NOT NULL,
+	EmailCliente VARCHAR(100) NOT NULL,
+	CPFCliente CHAR(14) NOT NULL UNIQUE KEY,
+	SexoCLiente VARCHAR(30) NOT NULL,
+	UsuarioCliente VARCHAR(50) NOT NULL,
+	SenhaCliente VARCHAR(10) NOT NULL,
+	PRIMARY KEY (CodCliente)
+);
